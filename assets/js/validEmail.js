@@ -2,7 +2,8 @@ const button = document.getElementById('buttton');
     button.addEventListener('click',(event)=>{
     event.preventDefault();
     const email = document.getElementById('email').value;
-     valid(email);
+    resetInput();
+    valid(email);      
 });
 function valid(argument){
   caracterEmail(argument);
@@ -80,4 +81,9 @@ function checkPoint(param){
      input.classList.add('error');
      input.value = error.message;
   }
+}
+function resetInput(){
+  const input = document.getElementById('email');
+  input.classList.remove('error');
+  input.classList.remove('sucess');
 }
