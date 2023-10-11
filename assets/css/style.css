@@ -1,0 +1,72 @@
+body{
+  background-color:  #E8E2DA;
+}
+main{
+  display: flex;
+  justify-content: center;  
+}
+.container{
+  border-radius: 20px;
+  width: 400px;
+  height: 74vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.container__images{
+  border-radius: 20px;
+  width: 100%;
+  background-image: url('../imagens/hist.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container__inputs{
+  display: flex;
+  gap: 0.70rem;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  height:120vh;
+ 
+}
+.container__inputs input{
+  border-radius :10px;
+  width: 200px;
+  height: 25px;
+  outline: 0; 
+  box-shadow: 0,0,0,0;
+  /* border: 100px; */
+}
+button{
+  border-radius: 5px;
+  margin-left: -0.90rem;
+  border-color: #F4A460;
+  width: 100px; 
+  outline: 0;
+  box-shadow: 0,0,0,0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: 	#F5DEB3;
+}
+input::placeholder{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.error{
+  border-color:red ;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+.sucess{
+  border-color: green;
+}
