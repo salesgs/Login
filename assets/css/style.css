@@ -137,7 +137,7 @@ input::placeholder{
  @media screen and (max-width:500px){
  .container{
    width: 320px;
-   margin-top: 6rem;  
+   margin-top: 2rem;  
   
   } 
 } 
