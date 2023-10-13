@@ -1,12 +1,15 @@
 body{
-  background-color:  #E8E2DA;
+  background-color:#DEFCFF;  
+  /* #E8E2DA; */
   margin: 0;
 }
 .header{
   height: 135px;
   display: flex;
   justify-content: space-around;
-  background-color:#DEFCFF;
+  background-color:#DEE6F8;
+  /* #C8AB83; */
+  /* #DEFCFF; */
 }
 .header__child-1{
   margin-top: 1rem;
@@ -17,6 +20,15 @@ body{
   background-repeat: no-repeat;
 }
 .header__child-2{
+  margin-top: 1rem;
+  width: 140px;
+  height: 120px;
+}
+.header__child-2 h2{
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+.header__child-3{
   margin-top: 1rem;
   width:  140px;
   height: 120px;
@@ -98,7 +110,8 @@ input::placeholder{
   height: 135px;
   display: flex;
   justify-content: space-around;
-  background-color:#DEFCFF; 
+  background-color:#DEE6F8;
+
 }
 .footer__child-1 {
   margin-top: 1rem;
