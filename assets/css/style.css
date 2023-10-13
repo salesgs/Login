@@ -9,37 +9,24 @@ body{
 .header{
   height: 135px;
   display: flex;
-  justify-content: space-around;
-  background-color:#DEE6F8;
+  justify-content: center;
+  background-color:#F8F8FF;
+  
   /* #C8AB83; */
   /* #DEFCFF; */
 }
-.header__child-1{
+.header__child{
   margin-top: 1rem;
   width: 140px;
   height: 120px;
-  background-image: url('../imagens/legend-2.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  
 }
-.header__child-2{
-  margin-top: 1rem;
-  width: 140px;
-  height: 120px;
-}
-.header__child-2 h2{
+.header__child h2{
   text-align: center;
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 28px;
 }
-.header__child-3{
-  margin-top: 1rem;
-  width:  140px;
-  height: 120px;
-  background-image: url('../imagens/legend-2.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
+
 main{
   display: flex;
   justify-content: center;  
@@ -80,21 +67,17 @@ button{
   border-radius: 5px;
   margin-left: -0.90rem;
   border-color: #F4A460;
+  font-family: 'Pixelify Sans', sans-serif;
+  
   width: 100px; 
   outline: 0;
   box-shadow: 0,0,0,0;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: 	#F5DEB3;
 }
 input::placeholder{
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 1000;
   font-size: 16px;
 }
 .error{
