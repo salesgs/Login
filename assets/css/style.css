@@ -1,5 +1,28 @@
 body{
   background-color:  #E8E2DA;
+  margin: 0;
+}
+.header{
+  height: 135px;
+  display: flex;
+  justify-content: space-around;
+  background-color:#DEFCFF;
+}
+.header__child-1{
+  margin-top: 1rem;
+  width: 140px;
+  height: 120px;
+  background-image: url('../imagens/legend.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__child-2{
+  margin-top: 1rem;
+  width:  140px;
+  height: 120px;
+  background-image: url('../imagens/legend.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 main{
   display: flex;
@@ -69,4 +92,28 @@ input::placeholder{
 }
 .sucess{
   border-color: green;
+}
+.footer{
+  margin-top: 2rem;
+  height: 135px;
+  display: flex;
+  justify-content: space-around;
+  background-color:#DEFCFF; 
+}
+.footer__child-1 {
+  margin-top: 1rem;
+  width:  140px;
+  height: 120px;
+  background-image: url('../imagens/legend.png');
+  background-size: 100%;
+  background-repeat: no-repeat; 
+}
+
+.footer__child-2{
+  margin-top: 1rem;
+  width:  140px;
+  height: 120px;
+  background-image: url('../imagens/legend.png');
+  background-size: 100%;
+  background-repeat: no-repeat; 
 }
