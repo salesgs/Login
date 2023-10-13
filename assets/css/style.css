@@ -15,7 +15,7 @@ body{
   margin-top: 1rem;
   width: 140px;
   height: 120px;
-  background-image: url('../imagens/3.png');
+  background-image: url('../imagens/legend-2.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -33,7 +33,7 @@ body{
   margin-top: 1rem;
   width:  140px;
   height: 120px;
-  background-image: url('../imagens/3.png');
+  background-image: url('../imagens/legend-2.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -118,7 +118,7 @@ input::placeholder{
   margin-top: 1rem;
   width:  140px;
   height: 120px;
-  background-image: url('../imagens/3.png');
+  background-image: url('../imagens/legend-2.png');
   background-size: 100%;
   background-repeat: no-repeat; 
 }
@@ -127,7 +127,7 @@ input::placeholder{
   margin-top: 1rem;
   width:  140px;
   height: 120px;
-  background-image: url('../imagens/3.png');
+  background-image: url('../imagens/legend-2.png');
   background-size: 100%;
   background-repeat: no-repeat; 
 }
