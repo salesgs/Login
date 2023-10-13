@@ -1,7 +1,10 @@
 body{
-  background-color:#DEFCFF;  
+  /* background-color:#DEFCFF;   */
   /* #E8E2DA; */
   margin: 0;
+  background-image: url('../imagens/medieval.jpg');
+  opacity: 0.8;
+  background-size: cover;
 }
 .header{
   height: 135px;
@@ -56,6 +59,7 @@ main{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* opacity: ; */
 }
 .container__inputs{
   display: flex;
@@ -67,11 +71,9 @@ main{
  
 }
 .container__inputs input{
-  border-radius :10px;
-  width: 200px;
+  width: 250px;
   height: 25px;
   outline: 0; 
-  box-shadow: 0,0,0,0;
   /* border: 100px; */
 }
 button{
@@ -122,7 +124,6 @@ input::placeholder{
   background-size: 100%;
   background-repeat: no-repeat; 
 }
-
 .footer__child-2{
   margin-top: 1rem;
   width:  140px;
@@ -131,3 +132,12 @@ input::placeholder{
   background-size: 100%;
   background-repeat: no-repeat; 
 }
+
+/* Reponsivo */
+ @media screen and (max-width:500px){
+ .container{
+   width: 320px;
+   margin-top: 6rem;  
+  
+  } 
+} 
