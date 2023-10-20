@@ -1,11 +1,11 @@
-function vallid(argument){
+export function validNumber(argument){
   lowerCase(argument);
-  upperCase(argument);
-  number(argument);
-  caracter(argument);   
-  caracterQuanty(argument);
+  // upperCase(argument);
+  // number(argument);
+  // caracter(argument);   
+  // caracterQuanty(argument);
 } 
-function lowerCase(param){
+ function lowerCase(param){
   try{
     let lowerCase = param.match(/([a-z])/);
     if(lowerCase === null){ //não havendo correspondência de minúscula havendo erro
