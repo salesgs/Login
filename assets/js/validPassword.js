@@ -2,7 +2,7 @@ export function validNumber(argument){
   const input = document.getElementById("password");
   if(input.value===""){
     input.type="text";
-    input.value="Complete o camapo";
+    input.value="Complete o campo";
     input.classList.add("error");
   }else{
     lowerCase(argument);
