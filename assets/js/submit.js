@@ -8,5 +8,5 @@ const button = document.getElementById('buttton');
     const password = document.getElementById("password").value;
     resetInput();
     valid(email);      
-    // validNumber(password);
+    validNumber(password);
 });
