@@ -54,7 +54,7 @@ function upperCase(param){
       input.value="";
       input.type="password";
       
-    },1000*1.90);
+    },1000*1.90)
   }
 }
 function number(param){
