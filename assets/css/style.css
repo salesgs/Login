@@ -7,6 +7,11 @@ body{
   background-size: cover;
   font-family:'Pixelify Sans', sans-serif ;
 }
+.font{
+  font-family:'Pixelify Sans', sans-serif ;
+  font-size: 18px;
+} 
+
 .header{
   height: 135px;
   display: flex;

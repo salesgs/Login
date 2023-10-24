@@ -3,17 +3,24 @@ export function validNumber(argument){
   if(input.value===""){
     input.type="text";
     input.value="Complete o campo";
+    const button = document.getElementById("buttton");
+    button.disabled=true; 
     input.classList.add("error");
+    setTimeout(()=>{
+      input.value="";
+      button.disabled=false; 
+      input.type="password";
+      
+    },1000*1.90)
   }else{
     lowerCase(argument);
   }
-  
 } 
  function lowerCase(param){
   try{
     let lowerCase = param.match(/([a-z])/);
     if(lowerCase === null){ //não havendo correspondência de minúscula havendo erro
-      throw new Error('Senha inválida, ausência de minúsculas');
+      throw new Error('Ausência de minúsculas');
     }else{
       upperCase(param); 
     }
@@ -23,13 +30,18 @@ export function validNumber(argument){
     input.classList.add("error");
     input.type ="text";
     input.value =error.message;
+    setTimeout(()=>{
+      input.value="";
+      input.type="password";
+      
+    },1000*1.90)
   }
 }
 function upperCase(param){
   try{ 
     let upperCase = param.match(/([A-Z])/);
     if(upperCase === null ){ //não havendo correspondência de maiúscula
-      throw new Error('Senha inválida, ausência de maiúsculas');
+      throw new Error('Ausência de maiúsculas');
     }else{
       number(param);
     }
@@ -38,6 +50,11 @@ function upperCase(param){
     input.classList.add("error");
     input.type ="text";
     input.value =error.message;
+    setTimeout(()=>{
+      input.value="";
+      input.type="password";
+      
+    },1000*1.90);
   }
 }
 function number(param){
@@ -53,13 +70,18 @@ function number(param){
    input.classList.add("error");
    input.type ="text";
    input.value =error.message;
+   setTimeout(()=>{
+    input.value="";
+    input.type="password";
+    
+  },1000*1.90)
   }
 }
 function caracter(param){
   try{
     let caractere = param.match(/[*%&+-.?#@''""'"=|/_ __]/);
     if(caractere === null){//não havendo caracteres especiais
-      throw new Error('Ausência de caracter [$+*@...]');
+      throw new Error('falta de caracter [$+*@...]');
     }else{
       caracterQuanty(param);     
     }
@@ -68,6 +90,11 @@ function caracter(param){
     input.classList.add("error");
     input.type ="text";
     input.value =error.message; 
+    setTimeout(()=>{
+      input.value="";
+      input.type="password";
+      
+    },1000*1.90)
   }
 }
 function caracterQuanty(param){
@@ -77,11 +104,17 @@ function caracterQuanty(param){
     }else{
       const input = document.getElementById("password");
       input.classList.add("sucess"); 
+      input.classList.add("font");
     }
   }catch(error){
     const input = document.getElementById("password");
     input.classList.add("error");
     input.type ="text";
     input.value =error.message; 
+    setTimeout(()=>{
+      input.value="";
+      input.type="password";
+      
+    },1000*1.90)
   }
 }

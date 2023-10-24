@@ -2,8 +2,14 @@ export function valid(argument){
   const input = document.getElementById("email");
   if(input.value===""){
     input.value="Complete o campo"
-    input.classList.add('error');
-  }else{
+    input.classList.add('error'); 
+    const button = document.getElementById("buttton");
+    button.disabled=true; 
+    setTimeout(()=>{
+      input.value="";
+      button.disabled=false;
+    },1000*1.90);
+    }else{
     caracterEmail(argument);
   }
 }
@@ -19,6 +25,9 @@ function caracterEmail(param){
      const input = document.getElementById('email');
      input.classList.add('error');
      input.value = error.message; //mensagem de erro no input
+     setTimeout(()=>{
+      input.value=""
+     },1000*1.90) 
   }
 }
  function text(param){
@@ -41,7 +50,10 @@ function caracterEmail(param){
      const input = document.getElementById('email');
      input.classList.add('error');
      input.value = error.message;
-  }
+     setTimeout(()=>{
+      input.value=""
+     },1000*1.90)
+    }
 }
 function textSequence(param){
   let textSequence = param.match(/(?<=@)gmail|outlook/ig);
@@ -59,6 +71,9 @@ function textSequence(param){
     const input = document.getElementById("email");
     input.classList.add("error");
     input.value = error.message;
+    setTimeout(()=>{
+      input.value=""
+     },1000*1.90)
   }
 } 
 function checkPoint(param){
@@ -72,6 +87,8 @@ function checkPoint(param){
     if(checkPoint[0]=="outlook.com" || checkPoint[0]=="gmail.com"){//não havendo
       const input = document.getElementById('email');
       input.classList.add('sucess');
+      input.classList.add("font");
+
     }else if(checkPoint!="outlook.com" || checkPoint!="gmail.com"){//não havendo
         throw new Error('Email inválido');
     }
@@ -81,11 +98,9 @@ function checkPoint(param){
      const input = document.getElementById('email');
      input.classList.add('error');
      input.value = error.message;
-  }
+     setTimeout(()=>{
+      input.value=""
+     },1000*1.90)
+    }
    
-}
-export function resetInput(){
-  const input = document.getElementById('email');
-  input.classList.remove('error');
-  input.classList.remove('sucess');
 }
